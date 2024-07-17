@@ -118,7 +118,17 @@ body {
     font-size: 1.25rem;
 }
 
+.footer .bi-whatsapp {
+    font-size: 20px;
+}
+
+.footer .nomor {
+    color: whitesmoke;
+    font-size: 1.25rem;
+}
+
 .footer a:hover {
     color: blue;
     text-decoration: none;
 }
+
