@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar-nav .nav-link {
   margin: 10px 20px;
 }
@@ -36,6 +35,21 @@ body {
   word-spacing: 10px;
   text-align: justify;
   color: whitesmoke;
+}
+
+.nav-tabs .nav-link {
+  margin: 5px 20px;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: chocolate;
+  border: none;
 }
 
 .menu {
