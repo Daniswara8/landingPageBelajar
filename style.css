@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .navbar-nav .nav-link {
   margin: 10px 20px;
 }
@@ -117,19 +118,37 @@ body {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .footer a {
-  color: whitesmoke;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .footer .bi-whatsapp {
   font-size: 20px;
 }
 
+.footer .bi-envelope {
+  font-size: 20px;
+}
+
+.footer .bi-pin-map-fill {
+  font-size: 20px;
+}
+
 .footer .nomor {
+  color: whitesmoke;
+  font-size: 1.25rem;
+}
+
+.footer .email {
+  color: whitesmoke;
+  font-size: 1.25rem;
+}
+
+.footer .map {
   color: whitesmoke;
   font-size: 1.25rem;
 }
