@@ -46,6 +46,14 @@ body {
   font-size: 20px;
 }
 
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
 .menu a:hover {
   color: white;
   background-color: chocolate;
@@ -67,6 +75,8 @@ body {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  height: 515px;
+  width: 400px;
 }
 
 .card:hover {
@@ -97,6 +107,14 @@ body {
 .KritikSaran {
     margin-top: 140px;
     color: whitesmoke;
+}
+
+.faq {
+  margin-top: 140px;
+}
+
+.faq h3 {
+  color: whitesmoke;
 }
 
 .lokasi {
