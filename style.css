@@ -65,7 +65,7 @@ body {
 }
 
 .menu h3 {
-  color: white;
+  color: whitesmoke;
 }
 
 .merk {
@@ -75,8 +75,7 @@ body {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 515px;
-  width: 400px;
+  height: 550px;
 }
 
 .card:hover {
@@ -92,7 +91,7 @@ body {
   font-weight: bold;
 }
 
-.card-text {
+.card-text {    
   font-size: 1rem;
   color: #6c757d;
   text-align: justify;
@@ -105,17 +104,37 @@ body {
 }
 
 .KritikSaran {
-    margin-top: 140px;
-    color: whitesmoke;
+  margin-top: 140px;
+  color: whitesmoke;
 }
 
 .faq {
   margin-top: 140px;
+  background-color: rgba(0, 0, 0, 0.712);
+  padding: 50px;
 }
 
 .faq h3 {
   color: whitesmoke;
 }
+
+.accordion-button {
+  height: 80px;
+}
+
+.testimoni {
+  margin-top: 200px;
+}
+
+.testimoni h3 {
+  color: whitesmoke;
+}
+
+.testimoni .card-body, .testimoni .card-text {
+  background-color: #4e3c3b;
+  color: whitesmoke;
+}
+
 
 .lokasi {
   margin-top: 140px;
