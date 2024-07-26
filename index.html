@@ -39,7 +39,7 @@
             <a class="nav-link active" aria-current="page" href="#menu">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#lokasi">LOCATION</a>
+            <a class="nav-link active" aria-current="page" href="#lokasi">TESTIMONI</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
@@ -68,6 +68,22 @@
     </div>
   </section>
   <!-- end about us -->
+
+  <!-- Pembuatan -->
+  <section class="pembuatan">
+    <div class="container bg-dark text-white p-5">
+      <div class="row justify-content-around gy-4">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <i class="bi bi-heart-fill"></i>Dibuat Dengan Sepenuh Hati
+          <h5></h5>
+        </div>
+        <div class="col-lg-5 text-end order-1 order-lg-2">
+          <img src="Assets/pembuatan.jpg" alt="" class="img-thumbnail">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end Pembuatan -->
 
   <!-- menu -->
   <section data-aos="fade-up" data-aos-duration="1000" class="container menu" id="menu">
@@ -230,76 +246,118 @@
   </section>
   <!-- end menu -->
 
-  <!-- Kritik dan Saran -->
-  <section class="container bg-dark p-5 w-75 KritikSaran">
-    <h3 class="text-center fs-1">KRITIK DAN SARAN</h3>
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <form>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nama</label>
-            <input type="text" autocomplete="off" class="form-control" id="exampleFormControlInput1">
+  <!-- contact -->
+  <section class="contact py-5" style="background-color: rgba(0, 0, 0, 0.712);">
+    <h3 class="fs-1 text-center">Contact Us</h3>
+    <p class="fs-4 text-center">Berikan Kritik, Saran atau Pesan Untuk Kami</p>
+    <div class="container my-5">
+      <div class="row justify-content-center gy-4">
+        <div class="col-lg-6 gmap">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.445766844912!2d110.41789667479486!3d-7.0742045693378115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70894bd693a6a9%3A0xfc456018f255bbc6!2sJl.%20Meranti%20Tim.%20Dalam%20III%20No.74%2C%20Padangsari%2C%20Kec.%20Banyumanik%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050263!5e0!3m2!1sid!2sid!4v1721704549126!5m2!1sid!2sid"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Kirim Kritik Dan Saran</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="col-lg-6 align-items-center form-contact bg-dark">
+          <div class="container p-4">
+            <form>
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label">Nama</label>
+                <input type="text" autocomplete="off" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" style="height: 45px;">
+              </div>
+              <div class="mb-2">
+                <label for="exampleFormControlTextarea1" class="form-label">Kirim Kritik Dan Saran</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  style="height: 100px;"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+              </div>
+            </form>
           </div>
-          <button type="button" class="btn btn-primary">Kirim!</button>
-        </form>
+        </div>
+      </div>
+
+      <div class="row justify-content-around mt-4 gy-3">
+        <div class="col-lg-6 text-center">
+          <div class="container py-3 bg-dark">
+            <i class="bi bi-pin-map-fill fs-3"></i>
+            <h4 class="fs-4">Alamat : </h4>
+            <p class="fs-5">Jl. Meranti Timur Dalam No III No. 74 </p>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="container py-3 bg-dark">
+            <i class="bi bi-telephone-fill fs-3"></i>
+            <h4 class="fs-4">No Telepon : </h4>
+            <p class="fs-5">085640673917</p>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="container py-3 bg-dark">
+            <i class="bi bi-envelope-at-fill fs-3"></i>
+            <h4 class="fs-4">Email :</h4>
+            <p class="fs-5">ResyaBrownies20@gmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <!-- end kritik dan saran -->
 
-  <!-- FaQ -->
-  <section class="container faq">
-    <h3 class="text-center fs-1">FaQ</h3>
-    <div class="row justify-content-center my-3">
-      <div class="col-lg-10">
-        <div class="accordion accordion-flush bg-danger custom-accordion" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
-                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                aria-controls="flush-collapseOne">
-                Apakah Weekend Masih Melayani Pemesanan?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Tidak, karena Pemilik sedang istirahat</div>
+    <div class="container faq">
+      <h3 class="fs-1 text-center">Pertanyaan Yang Sering Diajukan</h3>
+      <div class="row py-5">
+        <div class="col-lg-12">
+          <div class="accordion accordion-flush bg-danger custom-accordion" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                  aria-controls="flush-collapseOne">
+                  Apakah Weekend Masih Melayani Pemesanan?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Tidak, karena Pemilik sedang istirahat</div>
+              </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
-                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                aria-controls="flush-collapseTwo">
-                Apakah melayani pesanan dalam jumlah besar seperti untuk hajatan?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Ya, kami melayani Pemesanan dalam jumlah besar seperti hajatan atau acara
-                pernikahan</div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                  aria-controls="flush-collapseTwo">
+                  Apakah melayani pesanan dalam jumlah besar seperti untuk hajatan?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Ya, kami melayani Pemesanan dalam jumlah besar seperti hajatan atau acara
+                  pernikahan</div>
+              </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
-                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                aria-controls="flush-collapseThree">
-                Apakah pesanan bisa delivery order?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Untuk delivery order hanya bisa di daerah Banyumanik, selain itu tidak
-                melayani delivery order</div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-white d-block text-center" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                  aria-controls="flush-collapseThree">
+                  Apakah pesanan bisa delivery order?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Untuk delivery order hanya bisa di daerah Banyumanik, selain itu tidak
+                  melayani delivery order</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
   </section>
-  <!-- end FaQ -->
+  <!-- end Contact -->
+
 
   <!-- Testimoni -->
   <section class="container testimoni p-4">
@@ -359,7 +417,7 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-fill"></i>
               </div>
             </div>
           </div>
@@ -369,21 +427,6 @@
     </div>
   </section>
   <!-- end Testimoni -->
-
-  <!-- Lokasi -->
-  <section data-aos="fade-left" data-aos-duration="500" class="container lokasi" id="lokasi">
-    <h3 class="text-center fs-1">LOKASI UMKM </h3>
-    <div class="row justify-content-center my-4">
-      <div class="col-10">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.445766844912!2d110.41789667479486!3d-7.0742045693378115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70894bd693a6a9%3A0xfc456018f255bbc6!2sJl.%20Meranti%20Tim.%20Dalam%20III%20No.74%2C%20Padangsari%2C%20Kec.%20Banyumanik%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050263!5e0!3m2!1sid!2sid!4v1721704549126!5m2!1sid!2sid"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end Lokasi -->
 
   <!-- Footer -->
   <footer data-aos="fade-right" data-aos-duration="500" class="bg-dark text-white text-center py-4 footer" id="contact">
@@ -426,7 +469,7 @@
   <!-- script -->
   <script>
     // Initialize AOS
-    AOS.init();
+    AOS.init({ once: true });
 
     // Smooth scrolling for anchor links in the navbar
     document.querySelectorAll('nav a.nav-link').forEach(anchor => {

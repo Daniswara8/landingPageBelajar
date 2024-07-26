@@ -37,6 +37,14 @@ body {
   color: whitesmoke;
 }
 
+.pembuatan {
+  margin-top: 200px;
+}
+
+.menu {
+  margin-top: 200px;
+}
+
 .nav-tabs .nav-link {
   margin: 5px 20px;
 }
@@ -58,10 +66,6 @@ body {
   color: white;
   background-color: chocolate;
   border: none;
-}
-
-.menu {
-  margin-top: 140px;
 }
 
 .menu h3 {
@@ -108,10 +112,13 @@ body {
   color: whitesmoke;
 }
 
+.contact {
+  margin-top: 200px;
+  color: whitesmoke;  
+}
+
 .faq {
-  margin-top: 140px;
-  background-color: rgba(0, 0, 0, 0.712);
-  padding: 50px;
+  margin-top: 200px;
 }
 
 .faq h3 {
@@ -132,15 +139,6 @@ body {
 
 .testimoni .card-body, .testimoni .card-text {
   background-color: #4e3c3b;
-  color: whitesmoke;
-}
-
-
-.lokasi {
-  margin-top: 140px;
-}
-
-.lokasi h3 {
   color: whitesmoke;
 }
 
