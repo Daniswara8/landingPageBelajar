@@ -39,7 +39,7 @@
             <a class="nav-link active" aria-current="page" href="#menu">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#lokasi">TESTIMONI</a>
+            <a class="nav-link active" aria-current="page" href="#testimoni">TESTIMONI</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
@@ -51,9 +51,12 @@
   <!-- end navbar -->
 
   <!-- about us -->
-  <section data-aos="fade-down" data-aos-duration="500" class="container about" id="about">
+  <section data-aos="fade-down" data-aos-duration="500" class="container-fluid about py-5" id="about">
     <h3 class="text-center fs-1">ABOUT US</h3>
-    <div class="row justify-content-center my-4">
+    <div class="text-center">
+      <img src="Assets/about.jpg" alt="" height="500" width="700" style="object-fit: cover;" class="my-5">
+    </div>
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="700">
       <div class="col-10">
         <p class="fs-5">Selamat datang di Resya Brownies, tempat di mana kelezatan dan kualitas menjadi
           prioritas utama kami. Resya Brownies adalah UMKM yang berfokus pada pembuatan berbagai macam
@@ -66,27 +69,54 @@
           selera.</p>
       </div>
     </div>
+
+
+    <section class="promosi" data-aos="fade-up" data-aos-duration="500">
+      <h3 class="text-center fs-1">Kenapa Membeli Di <span class="merk">Resya Brownies?</span></h3>
+      <div class="row justify-content-xl-center justify-content-lg-around mt-5" data-aos="fade-right"
+        data-aos-duration="800">
+        <div class="col-lg-4">
+          <img src="Assets/pembuatan.jpg" alt="">
+        </div>
+        <div class="col-lg-5 my-auto">
+          <p class="fs-5">Produk yang dibuat Resya Brownies menggunakan bahan bahan yang premium sehingga memastikan
+            bahwa setiap brownies yang dibuat memiliki kualitas rasa terbaik dan aman dikonsumsi oleh konsumen</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-xl-center justify-content-lg-evenly packaging" style="margin-top: 100px;"
+        data-aos="fade-left" data-aos-duration="800">
+        <div class="col-lg-5 my-auto order-2 order-lg-1">
+          <p class="fs-5">
+            Packaging brownies kami dirancang khusus untuk menjaga kualitas dan keamanan produk hingga sampai ke tangan
+            Anda. Dengan bahan berkualitas dan proses pengemasan yang higienis, kami memastikan brownies tetap segar dan
+            lezat setiap saat
+          </p>
+        </div>
+        <div class="col-xl-4 col-lg-5 text-end order-1 order-lg-2">
+          <img src="Assets/packaging.jpg" alt="" height="267" width="400" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <div class="row justify-content-xl-center justify-content-lg-around" style="margin-top: 100px;" data-aos="fade-up"
+        data-aos-duration="800">
+        <div class="col-lg-4">
+          <img src="Assets/kepuasan.jpg" alt="" height="267" width="400" style="object-fit: cover;">
+        </div>
+        <div class="col-lg-5 my-auto">
+          <p class="fs-5">
+            Belanja di Resya Brownies dijamin memuaskan! Kami berkomitmen untuk memberikan produk brownies terbaik
+            dengan rasa yang tak tertandingi dan layanan yang ramah. Kepuasan Anda adalah prioritas utama kami.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </section>
   <!-- end about us -->
 
-  <!-- Pembuatan -->
-  <section class="pembuatan">
-    <div class="container bg-dark text-white p-5">
-      <div class="row justify-content-around gy-4">
-        <div class="col-lg-7 order-2 order-lg-1">
-          <i class="bi bi-heart-fill"></i>Dibuat Dengan Sepenuh Hati
-          <h5></h5>
-        </div>
-        <div class="col-lg-5 text-end order-1 order-lg-2">
-          <img src="Assets/pembuatan.jpg" alt="" class="img-thumbnail">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end Pembuatan -->
-
   <!-- menu -->
-  <section data-aos="fade-up" data-aos-duration="1000" class="container menu" id="menu">
+  <section data-aos="fade-up" data-aos-duration="700" class="container menu" id="menu">
     <h3 class="text-center fs-1">DAFTAR MENU <span class="merk">RESYA BROWNIES</span></h3>
 
     <ul class="nav nav-tabs justify-content-center mt-5 text-decoration-none">
@@ -169,7 +199,7 @@
                   <h5 class="card-title">Serabi Tampah</h5>
                   <p class="card-text">Rasakan kelezatan Serabi Tampah, kue tradisional Indonesia yang lembut dan gurih.
                     Serabi ini disajikan dengan beragam topping, mulai dari kelapa parut hingga saus kinca, menciptakan
-                    sensasi rasa yang unik dan memanjakan lidah.</p>
+                    sensasi rasa yang unik.</p>
                 </div>
               </div>
             </div>
@@ -213,7 +243,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card img-thumbnail">
+            <div class="card">
               <img src="Assets/keringTempe.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="container">
@@ -247,12 +277,13 @@
   <!-- end menu -->
 
   <!-- contact -->
-  <section class="contact py-5" style="background-color: rgba(0, 0, 0, 0.712);">
-    <h3 class="fs-1 text-center">Contact Us</h3>
+  <section data-aos="fade-up" data-aos-duration="500" class="contact p-5"
+    style="background-color: rgba(0, 0, 0, 0.712);" id="contact">
+    <h3 class="fs-1 text-center">CONTACT US</h3>
     <p class="fs-4 text-center">Berikan Kritik, Saran atau Pesan Untuk Kami</p>
     <div class="container my-5">
       <div class="row justify-content-center gy-4">
-        <div class="col-lg-6 gmap">
+        <div class="col-lg-6 gmap" data-aos="fade-up" data-aos-duration="700">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.445766844912!2d110.41789667479486!3d-7.0742045693378115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70894bd693a6a9%3A0xfc456018f255bbc6!2sJl.%20Meranti%20Tim.%20Dalam%20III%20No.74%2C%20Padangsari%2C%20Kec.%20Banyumanik%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050263!5e0!3m2!1sid!2sid!4v1721704549126!5m2!1sid!2sid"
@@ -260,7 +291,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 align-items-center form-contact bg-dark">
+        <div class="col-lg-6 align-items-center form-contact bg-black" data-aos="fade-up" data-aos-duration="700">
           <div class="container p-4">
             <form>
               <div class="mb-4">
@@ -282,22 +313,22 @@
       </div>
 
       <div class="row justify-content-around mt-4 gy-3">
-        <div class="col-lg-6 text-center">
-          <div class="container py-3 bg-dark">
+        <div class="col-lg-6 text-center" data-aos="zoom-out" data-aos-duration="800">
+          <div class="container py-3 bg-black">
             <i class="bi bi-pin-map-fill fs-3"></i>
             <h4 class="fs-4">Alamat : </h4>
             <p class="fs-5">Jl. Meranti Timur Dalam No III No. 74 </p>
           </div>
         </div>
-        <div class="col-lg-3 text-center">
-          <div class="container py-3 bg-dark">
+        <div class="col-lg-3 text-center" data-aos="zoom-out" data-aos-duration="800">
+          <div class="container py-3 bg-black">
             <i class="bi bi-telephone-fill fs-3"></i>
             <h4 class="fs-4">No Telepon : </h4>
             <p class="fs-5">085640673917</p>
           </div>
         </div>
-        <div class="col-lg-3 text-center">
-          <div class="container py-3 bg-dark">
+        <div class="col-lg-3 text-center" data-aos="zoom-out" data-aos-duration="800">
+          <div class="container py-3 bg-black">
             <i class="bi bi-envelope-at-fill fs-3"></i>
             <h4 class="fs-4">Email :</h4>
             <p class="fs-5">ResyaBrownies20@gmail.com</p>
@@ -306,7 +337,7 @@
       </div>
     </div>
 
-    <div class="container faq">
+    <div class="container faq" data-aos="fade-up" data-aos-duration="1300">
       <h3 class="fs-1 text-center">Pertanyaan Yang Sering Diajukan</h3>
       <div class="row py-5">
         <div class="col-lg-12">
@@ -360,10 +391,10 @@
 
 
   <!-- Testimoni -->
-  <section class="container testimoni p-4">
+  <section class="container testimoni p-4" id="testimoni" data-aos="fade-up" data-aos-duration="500">
     <h3 class="fs-1 text-center">TESTIMONI</h3>
     <div class="row justify-content-center my-5">
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
+      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="700">
         <div class="card">
           <img src="Assets/boluPelangi.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -383,7 +414,7 @@
         </div>
       </div>
 
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
+      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="card">
           <img src="Assets/keringTempe.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -404,7 +435,7 @@
         </div>
       </div>
 
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
+      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1300">
         <div class="card">
           <img src="Assets/brownies.jpg" class="card-img-top" alt="..." style="width: 398; height: 281;">
           <div class="card-body">
@@ -429,7 +460,7 @@
   <!-- end Testimoni -->
 
   <!-- Footer -->
-  <footer data-aos="fade-right" data-aos-duration="500" class="bg-dark text-white text-center py-4 footer" id="contact">
+  <footer data-aos="fade-right" data-aos-duration="500" class="bg-dark text-white text-center py-4 footer">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -464,6 +495,9 @@
   <!-- JS CDN Bootsrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
 
   <!-- script -->
