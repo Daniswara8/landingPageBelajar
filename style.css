@@ -11,6 +11,11 @@ body {
   margin: 10px 20px;
 }
 
+.navbar .merk {
+  color: chocolate;
+  font-family: "Playwrite HU";
+}
+
 .promosi .merk {
   color: chocolate;
   font-family: "Playwrite HU";
@@ -85,7 +90,8 @@ body {
   height: 550px;
 }
 
-.menu .card, .menu .card-text {
+.menu .card, 
+.menu .card-text {
   background-color: #4e3c3b;
   color: whitesmoke;
 }
@@ -145,7 +151,8 @@ body {
   color: whitesmoke;
 }
 
-.testimoni .card-body, .testimoni .card-text {
+.testimoni .card-body, 
+.testimoni .card-text {
   background-color: #4e3c3b;
   color: whitesmoke;
 }
