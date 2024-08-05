@@ -16,7 +16,22 @@ body {
   font-family: "Playwrite HU";
 }
 
-.promosi .merk {
+.promosi .merk-depan {
+  color: whitesmoke;
+  font-family: "Playwrite HU";
+}
+
+.promosi .merk-belakang {
+  color: chocolate;
+  font-family: "Playwrite HU";
+}
+
+.menu .merk-depan {
+  color: whitesmoke;
+  font-family: "Playwrite HU";
+}
+
+.menu .merk-belakang {
   color: chocolate;
   font-family: "Playwrite HU";
 }
@@ -87,10 +102,10 @@ body {
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 550px;
+  height: 570px;
 }
 
-.menu .card, 
+.menu .card,
 .menu .card-text {
   background-color: #4e3c3b;
   color: whitesmoke;
@@ -104,13 +119,16 @@ body {
   padding: 20px;
 }
 
-
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.card-text {    
+.modal p {
+  text-align: justify;
+}
+
+.card-text {
   font-size: 1rem;
   color: #6c757d;
   text-align: justify;
@@ -122,6 +140,10 @@ body {
   object-fit: cover;
 }
 
+.modal-body p {
+  font-size: 1rem;
+}
+
 .KritikSaran {
   margin-top: 140px;
   color: whitesmoke;
@@ -129,7 +151,7 @@ body {
 
 .contact {
   margin-top: 200px;
-  color: whitesmoke;  
+  color: whitesmoke;
 }
 
 .faq {
@@ -152,7 +174,7 @@ body {
   color: whitesmoke;
 }
 
-.testimoni .card-body, 
+.testimoni .card-body,
 .testimoni .card-text {
   background-color: #4e3c3b;
   color: whitesmoke;
@@ -225,7 +247,7 @@ body {
 }
 
 @media (max-width: 768px) {
-   .navbar-nav {
+  .navbar-nav {
     flex-direction: column;
     align-items: center;
   }
@@ -234,7 +256,7 @@ body {
     margin: 3px 0;
   }
 
-  .about img{
+  .about img {
     height: 267px;
     width: 400px;
     text-align: center;
