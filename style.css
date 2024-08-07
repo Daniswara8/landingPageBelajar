@@ -36,10 +36,17 @@ body {
   font-family: "Playwrite HU";
 }
 
-.navbar-nav a.nav-link.active {
+.navbar-nav a.nav-link {
   font-size: 14px;
   font-family: "Playwrite HU";
   color: whitesmoke;
+}
+
+.navbar-nav .nav-link.active {
+  font-size: 14px;
+  font-family: "Playwrite HU";
+  color: whitesmoke;
+  border-bottom: 3px solid white;
 }
 
 .container a.navbar-brand {
@@ -92,6 +99,12 @@ body {
 .menu a:hover {
   color: white;
   background-color: chocolate;
+  border: none;
+}
+
+.menu .nav-link:visited {
+  background-color: chocolate;
+  color: whitesmoke;
   border: none;
 }
 
@@ -288,7 +301,7 @@ body {
     height: 300px;
   }
 
-  .promosi .row {
+  /* .promosi .row {
     justify-content: center;
-  }
+  } */
 }
