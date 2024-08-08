@@ -11,6 +11,12 @@ body {
   margin: 10px 20px;
 }
 
+.navbar-toggler, 
+.navbar-toggler-icon {
+  color: white;
+  background-color: white;
+}
+
 .navbar .merk {
   color: chocolate;
   font-family: "Playwrite HU";
@@ -180,14 +186,15 @@ body {
 }
 
 .testimoni {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   background-color: rgba(0, 0, 0, 0.712);
+  padding: 250px 0 60px;
 }
 
 .testimoni .carousel-control-prev-icon,
 .testimoni .carousel-control-next-icon {
   background-color: blue !important;
-  color: blue !important;
+  color: white !important;
   width: 50px;
   height: 50px;
 }
@@ -197,12 +204,6 @@ body {
 }
 
 .testimoni h3 {
-  color: whitesmoke;
-}
-
-.testimoni .card-body,
-.testimoni .card-text {
-  background-color: #4e3c3b;
   color: whitesmoke;
 }
 
@@ -232,7 +233,7 @@ body {
 }
 
 .footer {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .footer a {
