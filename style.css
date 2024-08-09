@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
 body {
-  background-image: url("Assets/bgBrownies.jpg");
+  /* background-image: url("Assets/bgBrownies.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -55,16 +55,26 @@ body {
   border-bottom: 3px solid white;
 }
 
-.container a.navbar-brand {
+.navbar .container a.navbar-brand {
   font-size: 16px;
   color: whitesmoke;
   font-family: "Playwrite HU";
 }
 
+.parallax {
+  background-image: url('Assets/bgBrownies.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+}
+
 .about {
   padding: 60px 0;
-  margin-top: 50px;
-  background-color: rgba(0, 0, 0, 0.712);
+  /* margin-top: 50px; */
+  background-color: black;
 }
 
 .about h3 {
@@ -82,7 +92,9 @@ body {
 }
 
 .menu {
-  margin-top: 200px;
+  margin-top: px;
+  background-color: rgb(56, 28, 8);
+  padding: 100px 0 15px;
 }
 
 .nav-tabs .nav-link {
@@ -169,7 +181,9 @@ body {
 }
 
 .contact {
-  margin-top: 200px;
+  background-color: rgb(30, 30, 30);
+  /* margin-top: 200px; */
+  padding: 100px 50px 50px;
   color: whitesmoke;
 }
 
@@ -186,9 +200,8 @@ body {
 }
 
 .testimoni {
-  /* margin-top: 200px; */
-  background-color: rgba(0, 0, 0, 0.712);
-  padding: 250px 0 60px;
+  background-color: black;
+  padding: 250px 0 300px;
 }
 
 .testimoni .carousel-control-prev-icon,
@@ -233,7 +246,7 @@ body {
 }
 
 .footer {
-  margin-top: 300px;
+  /* margin-top: 300px; */
 }
 
 .footer a {

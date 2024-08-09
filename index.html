@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <!-- aos CDN -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
   <!-- eksternal Css -->
   <link rel="stylesheet" href="style.css">
@@ -54,6 +54,12 @@
   </nav>
   <!-- end navbar -->
 
+  <!-- parallax -->
+  <section class="parallax">
+
+  </section>
+  <!-- end parallax -->
+
   <!-- about us -->
   <section data-aos="fade-down" data-aos-duration="500" class="container-fluid about" id="about">
     <h3 class="text-center fs-1">ABOUT US</h3>
@@ -77,7 +83,7 @@
 
     <div class="promosi" data-aos="fade-up" data-aos-duration="500">
       <h3 class="text-center fs-1">Kenapa Membeli Di <span class="merk-depan">Resya</span>
-        <spam class="merk-belakang">Brownies</spam>
+        <span class="merk-belakang">Brownies</span>
       </h3>
 
       <div class="row justify-content-center justify-content-xl-center justify-content-lg-around mt-5"
@@ -124,32 +130,121 @@
   <!-- end about us -->
 
   <!-- menu -->
-  <section data-aos="fade-up" data-aos-duration="700" class="container menu" id="menu">
+  <section data-aos="fade-up" data-aos-duration="700" class="menu" id="menu">
     <h3 class="text-center fs-1">DAFTAR MENU <span class="merk-depan">Resya</span> <span
         class="merk-belakang">Brownies</span> </h3>
+    <div class="container">
+      <ul class="nav nav-tabs justify-content-center mt-5 text-decoration-none">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" data-target="snackCemilan">Snack & Cemilan</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-target="lauk">Nasi & Lauk</a>
+        </li>
+      </ul>
 
-    <ul class="nav nav-tabs justify-content-center mt-5 text-decoration-none">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#" data-target="snackCemilan">Snack & Cemilan</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#" data-target="lauk">Nasi & Lauk</a>
-      </li>
-    </ul>
+      <div class="tab-content">
 
-    <div class="tab-content">
+        <!-- cemilan -->
+        <div class="tab-pane active" id="snackCemilan">
 
-      <!-- cemilan -->
-      <div class="tab-pane active" id="snackCemilan">
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-4 col-md-6 mb-4 kolom">
+              <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#browniesCoklat">
+                <img src="Assets/brownies.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <div class="container">
+                    <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
+                    <h1 class="card-title fs-4 mt-3">Brownies Coklat</h1>
+                    <hr>
+                    <h1 class="fs-4">Rp. 150.000 / BOX</h1>
+                    <hr>
+                    <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#boluGulung">
+                <img src="Assets/boluGulung.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <div class="container">
+                    <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
+                    <h1 class="card-title fs-4 mt-3">Bolu Gulung</h1>
+                    <hr>
+                    <h1 class="fs-4">Rp. 200.000 / BOX</h1>
+                    <hr>
+                    <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#boluPelangi">
+              <div class="card" id="card">
+                <img src="Assets/boluPelangi.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <div class="container">
+                    <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
+                    <h1 class="card-title fs-4 mt-3">Bolu Pelangi</h1>
+                    <hr>
+                    <h1 class="fs-4">Rp. 200.000 / BOX</h1>
+                    <hr>
+                    <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#cheeseStick">
+              <div class="card" id="card">
+                <img src="Assets/cheeseStick.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <div class="container">
+                    <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
+                    <h1 class="card-title fs-4 mt-3">Bolu Pelangi</h1>
+                    <hr>
+                    <h1 class="fs-4">Rp. 100.000 / BOX</h1>
+                    <hr>
+                    <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#serabiTampah">
+              <div class="card" id="card">
+                <img src="Assets/serabiTampah.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                  <div class="container">
+                    <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
+                    <h1 class="card-title fs-4 mt-3">Serabi Tampah</h1>
+                    <hr>
+                    <h1 class="fs-4">Rp. 150.000 / BOX</h1>
+                    <hr>
+                    <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end cemilan -->
+
+      <div class="tab-pane" id="lauk">
+
+        <!-- Konten untuk lauk -->
         <div class="row justify-content-center my-5">
-          <div class="col-lg-4 col-md-6 mb-4 kolom">
-            <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#browniesCoklat">
-              <img src="Assets/brownies.jpg" class="card-img-top" alt="...">
+          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#ayamBakar">
+            <div class="card" id="card">
+              <img src="Assets/ayamBakar.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <div class="container">
                   <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                  <h1 class="card-title fs-4 mt-3">Brownies Coklat</h1>
+                  <h1 class="card-title fs-4 mt-3">Ayam Bakar</h1>
                   <hr>
                   <h1 class="fs-4">Rp. 150.000 / BOX</h1>
                   <hr>
@@ -160,14 +255,14 @@
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#boluGulung">
-              <img src="Assets/boluGulung.jpg" class="card-img-top" alt="...">
+            <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#nasiTumpeng">
+              <img src="Assets/nasiTumpeng.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <div class="container">
                   <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                  <h1 class="card-title fs-4 mt-3">Bolu Gulung</h1>
+                  <h1 class="card-title fs-4 mt-3">Nasi Tumpeng</h1>
                   <hr>
-                  <h1 class="fs-4">Rp. 200.000 / BOX</h1>
+                  <h1 class="fs-4">Rp. 300.000 / BOX</h1>
                   <hr>
                   <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
                 </div>
@@ -175,15 +270,15 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#boluPelangi">
+          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#keringTempe">
             <div class="card" id="card">
-              <img src="Assets/boluPelangi.jpg" class="card-img-top" alt="...">
+              <img src="Assets/keringTempe.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <div class="container">
                   <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                  <h1 class="card-title fs-4 mt-3">Bolu Pelangi</h1>
+                  <h1 class="card-title fs-4 mt-3">Kering Tempe</h1>
                   <hr>
-                  <h1 class="fs-4">Rp. 200.000 / BOX</h1>
+                  <h1 class="fs-4">Rp. 50.000 / BOX</h1>
                   <hr>
                   <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
                 </div>
@@ -191,31 +286,15 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#cheeseStick">
+          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#bawangGoreng">
             <div class="card" id="card">
-              <img src="Assets/cheeseStick.jpg" class="card-img-top" alt="...">
+              <img src="Assets/bawangGoreng.jpg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <div class="container">
                   <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                  <h1 class="card-title fs-4 mt-3">Bolu Pelangi</h1>
+                  <h1 class="card-title fs-4 mt-3">Bawang Goreng</h1>
                   <hr>
-                  <h1 class="fs-4">Rp. 100.000 / BOX</h1>
-                  <hr>
-                  <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#serabiTampah">
-            <div class="card" id="card">
-              <img src="Assets/serabiTampah.jpg" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <div class="container">
-                  <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                  <h1 class="card-title fs-4 mt-3">Serabi Tampah</h1>
-                  <hr>
-                  <h1 class="fs-4">Rp. 150.000 / BOX</h1>
+                  <h1 class="fs-4">Rp. 75.000 / BOX</h1>
                   <hr>
                   <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
                 </div>
@@ -225,79 +304,6 @@
 
         </div>
       </div>
-    </div>
-    <!-- end cemilan -->
-
-    <div class="tab-pane" id="lauk">
-
-      <!-- Konten untuk lauk -->
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#ayamBakar">
-          <div class="card" id="card">
-            <img src="Assets/ayamBakar.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <div class="container">
-                <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                <h1 class="card-title fs-4 mt-3">Ayam Bakar</h1>
-                <hr>
-                <h1 class="fs-4">Rp. 150.000 / BOX</h1>
-                <hr>
-                <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card" id="card" data-bs-toggle="modal" data-bs-target="#nasiTumpeng">
-            <img src="Assets/nasiTumpeng.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <div class="container">
-                <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                <h1 class="card-title fs-4 mt-3">Nasi Tumpeng</h1>
-                <hr>
-                <h1 class="fs-4">Rp. 300.000 / BOX</h1>
-                <hr>
-                <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#keringTempe">
-          <div class="card" id="card">
-            <img src="Assets/keringTempe.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <div class="container">
-                <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                <h1 class="card-title fs-4 mt-3">Kering Tempe</h1>
-                <hr>
-                <h1 class="fs-4">Rp. 50.000 / BOX</h1>
-                <hr>
-                <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4" data-bs-toggle="modal" data-bs-target="#bawangGoreng">
-          <div class="card" id="card">
-            <img src="Assets/bawangGoreng.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <div class="container">
-                <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                <h1 class="card-title fs-4 mt-3">Bawang Goreng</h1>
-                <hr>
-                <h1 class="fs-4">Rp. 75.000 / BOX</h1>
-                <hr>
-                <p class="card-title fw-bold">Ketuk untuk Melihat Deskripsi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
     </div>
   </section>
   <!-- end menu -->
@@ -617,8 +623,7 @@
   <!-- end modal -->
 
   <!-- contact -->
-  <section data-aos="fade-up" data-aos-duration="500" class="contact p-5"
-    style="background-color: rgba(0, 0, 0, 0.712);" id="contact">
+  <section data-aos="fade-up" data-aos-duration="500" class="contact" id="contact">
     <h3 class="fs-1 text-center">CONTACT US</h3>
     <p class="fs-4 text-center">Berikan Kritik, Saran atau Pesan Untuk Kami</p>
     <div class="container my-5">
