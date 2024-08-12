@@ -28,6 +28,9 @@
     <div class="container">
       <a class="navbar-brand">
         Resya <span class="merk">Brownies</span>
+        <!-- <span>
+          <img src="Assets/logo.png" alt="" style="width: 100px; width: 100px; object-fit: cover;">
+        </span> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
@@ -56,7 +59,19 @@
 
   <!-- parallax -->
   <section class="parallax">
-
+    <div class="row h-100 justify-content-center">
+      <div class="col-md-5 col-lg-6 my-auto">
+        <div class="text-lg-center text-center">
+          <img src="Assets/logo69.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-6 my-sm-auto text-lg-center text-center rounded jargon">
+        <h3 class="fs-2 text-white">
+          Sweet, Delicious, and Healthy
+        </h3>
+        <a class="btn btn-outline-light mt-3 btn-lg" href="#menu">Check Our Product!</a>
+      </div>
+    </div>
   </section>
   <!-- end parallax -->
 
@@ -948,6 +963,7 @@
   <script>
     // Initialize AOS
     AOS.init({ once: true });
+    window.addEventListener('load', AOS.refresh);
 
     // scrollspy navbar
     const sections = document.querySelectorAll('section');
