@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <!-- aos CDN -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- eksternal Css -->
   <link rel="stylesheet" href="style.css">
@@ -28,9 +28,6 @@
     <div class="container">
       <a class="navbar-brand">
         Resya <span class="merk">Brownies</span>
-        <!-- <span>
-          <img src="Assets/logo.png" alt="" style="width: 100px; width: 100px; object-fit: cover;">
-        </span> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
@@ -60,25 +57,26 @@
   <!-- parallax -->
   <section class="parallax">
     <div class="row h-100 justify-content-center">
-      <div class="col-md-5 col-lg-6 my-auto">
+      <div class="col-md-5 col-lg-6 my-auto" data-aos="fade-right" data-aos-duration="1000">
         <div class="text-lg-center text-center">
           <img src="Assets/logo69.png" alt="">
         </div>
       </div>
-      <div class="col-md-5 col-lg-6 my-sm-auto text-lg-center text-center rounded jargon">
+      <div class="col-md-5 col-lg-6 my-sm-auto text-lg-center text-center rounded jargon" data-aos="fade-left"
+        data-aos-duration="1000">
         <h3 class="fs-2 text-white">
           Sweet, Delicious, and Healthy
         </h3>
-        <a class="btn btn-outline-light mt-3 btn-lg" href="#menu">Check Our Product!</a>
+        <a class="btn btn-outline-light mt-3 mt-lg-5 btn-lg" href="#menu">Check Our Product!</a>
       </div>
     </div>
   </section>
   <!-- end parallax -->
 
   <!-- about us -->
-  <section data-aos="fade-down" data-aos-duration="500" class="container-fluid about" id="about">
-    <h3 class="text-center fs-1">ABOUT US</h3>
-    <div class="text-center">
+  <section class="container-fluid about" id="about">
+    <h3 class="text-center fs-1" data-aos="fade-up" data-aos-duration="500">ABOUT US</h3>
+    <div class="text-center" data-aos="fade-up" data-aos-duration="500">
       <img src="Assets/about.jpg" alt="" height="500" width="700" class="object-fit-cover my-5">
     </div>
     <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="700">
@@ -145,10 +143,10 @@
   <!-- end about us -->
 
   <!-- menu -->
-  <section data-aos="fade-up" data-aos-duration="700" class="menu" id="menu">
-    <h3 class="text-center fs-1">DAFTAR MENU <span class="merk-depan">Resya</span> <span
-        class="merk-belakang">Brownies</span> </h3>
-    <div class="container">
+  <section class="menu" id="menu">
+    <h3 class="text-center fs-1" data-aos="fade-up" data-aos-duration="700">DAFTAR MENU <span
+        class="merk-depan">Resya</span> <span class="merk-belakang">Brownies</span> </h3>
+    <div class="container" data-aos="fade-up" data-aos-duration="700">
       <ul class="nav nav-tabs justify-content-center mt-5 text-decoration-none">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#" data-target="snackCemilan">Snack & Cemilan</a>
@@ -218,7 +216,7 @@
                 <div class="card-body text-center">
                   <div class="container">
                     <h4 class="merk-depan">Resya <span class="merk-belakang">Brownies</span> </h4>
-                    <h1 class="card-title fs-4 mt-3">Bolu Pelangi</h1>
+                    <h1 class="card-title fs-4 mt-3">Cheese Stick</h1>
                     <hr>
                     <h1 class="fs-4">Rp. 100.000 / BOX</h1>
                     <hr>
@@ -332,7 +330,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-4" id="exampleModalLabel">Detail Produk</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Clos  e"></button>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -638,9 +636,10 @@
   <!-- end modal -->
 
   <!-- contact -->
-  <section data-aos="fade-up" data-aos-duration="500" class="contact" id="contact">
-    <h3 class="fs-1 text-center">CONTACT US</h3>
-    <p class="fs-4 text-center">Berikan Kritik, Saran atau Pesan Untuk Kami</p>
+  <section class="contact" id="contact">
+    <h3 class="fs-1 text-center" data-aos="fade-up" data-aos-duration="500">CONTACT US</h3>
+    <p class="fs-4 text-center" data-aos="fade-up" data-aos-duration="500">Berikan Kritik, Saran atau Pesan Untuk Kami
+    </p>
     <div class="container my-5">
       <div class="row justify-content-center gy-4">
 
@@ -756,75 +755,6 @@
   </section>
   <!-- end Contact -->
 
-
-  <!-- Testimoni -->
-  <!-- <section class="container testimoni p-4" id="testimoni" data-aos="fade-up" data-aos-duration="500">
-    <h3 class="fs-1 text-center">TESTIMONI</h3>
-    <div class="row justify-content-center my-5">
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="700">
-        <div class="card">
-          <img src="Assets/boluPelangi.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="container">
-              <h5 class="card-title text-center">Arum, Jakarta</h5>
-              <p class="card-text">"Bolu pelanginya luar biasa! Rasa manisnya pas dan setiap lapisan memiliki rasa yang
-                unik. Aroma bolu saat dipanggang membuat seluruh rumah jadi harum, sangat menggugah selera!"</p>
-              <div class="text-center">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1000">
-        <div class="card">
-          <img src="Assets/keringTempe.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div class="container">
-              <h5 class="card-title text-center">Rina, Yogyakarta</h5>
-              <p class="card-text">"Kering tempe ini benar-benar bikin ketagihan! Rasa pedasnya mantap dan bikin mulut
-                terasa hangat, tapi tetap enak banget. Ini camilan yang pas untuk menemani waktu santai atau nonton
-                film!"</p>
-              <div class="text-center">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-half"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xl-4 col-lg-6 col-md-6 mb-5" data-aos="fade-up" data-aos-duration="1300">
-        <div class="card">
-          <img src="Assets/brownies.jpg" class="card-img-top" alt="..." style="width: 398; height: 281;">
-          <div class="card-body">
-            <div class="container">
-              <h5 class="card-title text-center">Lina, Surabaya</h5>
-              <p class="card-text">"Saya sangat puas dengan brownies coklat ini. Rasanya manis dan coklatnya benar-benar
-                terasa, memberikan sensasi yang memanjakan setiap kali menggigitnya. Ini jadi favorit baru saya!"</p>
-              <div class="text-center">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
-
   <!-- testimoni -->
   <section class="testimoni " id="testimoni">
     <h3 class="fs-1 text-center">TESTIMONI</h3>
@@ -915,7 +845,7 @@
   <!-- end Testimoni -->
 
   <!-- Footer -->
-  <footer data-aos="fade-right" data-aos-duration="500" class="bg-dark text-white text-center py-4 footer">
+  <footer data-aos="fade-right" data-aos-duration="500" class="text-white text-center py-4 footer">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -936,7 +866,7 @@
           </p>
           <p class="mt-3">
             <i class="bi bi-pin-map-fill"></i>
-            <span class="map ms-2">Jl Singa Timur 2 No 1</span>
+            <span class="map ms-2">Jl. Meranti Tim. Dalam III No.74</span>
           </p>
         </div>
       </div>
@@ -963,7 +893,6 @@
   <script>
     // Initialize AOS
     AOS.init({ once: true });
-    window.addEventListener('load', AOS.refresh);
 
     // scrollspy navbar
     const sections = document.querySelectorAll('section');
@@ -1004,9 +933,25 @@
           // Show the target tab pane
           const target = this.getAttribute('data-target');
           document.getElementById(target).classList.add('active');
+
         });
       });
     });
+
+    // adjusting Container 
+    function updateContainerClass() {
+      var container = document.querySelector('.navbar .container');
+      if (container && window.innerWidth >= 2560) {
+        container.classList.add('container-fluid');
+        container.classList.remove('container');
+      } else if (container) {
+        container.classList.add('container');
+        container.classList.remove('container-fluid');
+      }
+    }
+    updateContainerClass();
+    window.addEventListener('resize', updateContainerClass);
+
   </script>
 
 </body>
