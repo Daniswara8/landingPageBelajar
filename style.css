@@ -9,21 +9,11 @@ body {
   font-size: 14px;
   font-family: "Playwrite HU";
   color: whitesmoke;
-
-  @media (min-width:2560px) {
-    font-size: 30px !important;
-    margin: 50px;
-  }
-  
 }
 
 .navbar .merk {
   color: chocolate;
   font-family: "Playwrite HU";
-
-  @media (min-width:2560px) {
-    font-size: 50px !important;
-  }
 }
 
 .navbar-nav .nav-link.active {
@@ -44,10 +34,6 @@ body {
   font-size: 16px;
   color: whitesmoke;
   font-family: "Playwrite HU";
-
-  @media (min-width:2560px) {
-    font-size: 50px !important;
-  }
 }
 
 .navbar-toggler,
@@ -68,10 +54,6 @@ body {
   background-position: center;
   width: 100%;
   height: 100vh;
-
-  /* @media (min-width: 2560px) {
-    height: 1400px;
-  } */
 }
 
 .about {
@@ -304,22 +286,67 @@ body {
   font-size: 1.25rem;
 }
 
+/* 4k */
 @media (min-width: 2560px) {
-  .menu .container {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  .navbar-nav .nav-link {
+    font-size: 30px !important;
+    margin: 50px;
   }
 
-  .navbar .container {
-    width: 100% !important;
-    /* padding: 0 !important;
-    margin: 0 !important; */
+  .navbar .merk {
+    font-size: 50px !important;
+  }
+  .navbar a.navbar-brand {
+    font-size: 50px !important;
+  }
+
+  .parallax img {
+    height: 700px !important;
+    width: 700px !important;
+  }
+
+  .jargon h3,
+  .jargon .btn {
+    font-size: 60px !important;
+    margin-top: 60px !important;
+  }
+
+  .about {
+    padding: 120px 0 !important;
+  }
+
+  .about h3 {
+    font-size: 70px !important;
+  }
+  
+  .about img.aboutImg {
+    height: 800px !important;
+    width: 1000px !important;
+    margin: 80px 0 !important;
+  }
+
+  .about img {
+    height: 400px !important;
+    width: 700px !important;
+  }
+
+  .about p {
+    font-size: 40px !important;
+  }
+
+  .promosi {
+    margin-top: 290px !important;
+  }
+
+  .promosi .merk-depan,
+  .promosi .merk-belakang {
+    font-size: 55px;
   }
 }
+/* End 4k */
 
+/* Tablet */
 @media (max-width: 768px) {
-
   .navbar .container {
     margin: 20px auto;
   }
@@ -344,7 +371,10 @@ body {
     object-fit: cover;
   }
 }
+/* End Tablet */
 
+
+/* Handphone */
 @media (max-width: 425px) {
 
   .navbar .container {
@@ -377,3 +407,4 @@ body {
     object-fit: cover;
   }
 }
+/* End Handphone */
