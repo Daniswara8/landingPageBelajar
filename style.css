@@ -342,6 +342,38 @@ body {
   .promosi .merk-belakang {
     font-size: 55px;
   }
+
+  .promosi .row {
+    justify-content: space-evenly !important;
+  }
+
+  .menu {
+    padding: 200px 0 !important;
+  }
+
+  .menu .container {
+    width: 80% !important;
+    max-width: 100% !important;
+  }
+
+  .menu .card {
+    height: 770px !important;
+  }
+
+  .card-body {
+    padding: 30px 0 !important;
+  }
+  
+  .menu .card-body .merk-depan,
+  .menu .card-body .merk-belakang,
+  .menu .card-body h1,
+  .menu .card-body p {
+    font-size: 30px !important;
+  }
+
+  .card-img-top {
+    height: 430px !important;
+  }
 }
 /* End 4k */
 
