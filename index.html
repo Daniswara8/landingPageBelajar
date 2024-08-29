@@ -56,13 +56,13 @@
 
   <!-- parallax -->
   <section class="parallax">
-    <div class="row h-100 justify-content-center justify-content-lg-start">
+    <div class="row h-100 justify-content-center justify-content-lg-start mt-5 mt-sm-0">
       <div class="col-md-5 col-lg-6 my-auto" data-aos="fade-right" data-aos-duration="1000">
         <div class="text-lg-center text-center">
           <img src="Assets/logo69.png" alt="">
         </div>
       </div>
-      <div class="col-md-5 col-lg-6 my-sm-auto text-lg-center text-center rounded jargon" data-aos="fade-left"
+      <div class="col-md-5 col-lg-6 my-auto text-lg-center text-center rounded jargon" data-aos="fade-left"
         data-aos-duration="1000">
         <h3 class="fs-2 text-white">
           Sweet, Delicious, and Healthy
@@ -76,11 +76,14 @@
   <!-- about us -->
   <section class="container-fluid about" id="about">
     <h3 class="text-center fs-1" data-aos="fade-up" data-aos-duration="500">ABOUT US</h3>
-    <div class="text-center" data-aos="fade-up" data-aos-duration="500">
+    <!-- <div class="text-center" data-aos="fade-up" data-aos-duration="500">
       <img src="Assets/about.jpg" alt="" height="500" width="700" class="object-fit-cover my-5 aboutImg">
-    </div>
-    <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="700">
-      <div class="col-10">
+    </div> -->
+    <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="700">
+      <div class="col-xl-6 my-auto text-center">
+        <img src="Assets/about.jpg" alt="" height="400" width="600" class="object-fit-cover aboutImg">
+      </div>
+      <div class="col-10 col-xl-5 mt-5 mt-xl-0">
         <p class="fs-5">Selamat datang di Resya Brownies, tempat di mana kelezatan dan kualitas menjadi
           prioritas utama kami. Resya Brownies adalah UMKM yang berfokus pada pembuatan berbagai macam
           makanan lezat yang siap memanjakan lidah Anda.</p>
@@ -95,7 +98,7 @@
 
 
     <div class="promosi" data-aos="fade-up" data-aos-duration="500">
-      <h3 class="text-center fs-1">Kenapa Membeli Di <span class="merk-depan">Resya</span>
+      <h3 class="text-center fs-1">KENAPA MEMBELI DI <span class="merk-depan">Resya</span>
         <span class="merk-belakang">Brownies</span>
       </h3>
 
@@ -640,6 +643,7 @@
     <h3 class="fs-1 text-center" data-aos="fade-up" data-aos-duration="500">CONTACT US</h3>
     <p class="fs-4 text-center" data-aos="fade-up" data-aos-duration="500">Berikan Kritik, Saran atau Pesan Untuk Kami
     </p>
+
     <div class="container my-5">
       <div class="row justify-content-center gy-4">
 
@@ -651,28 +655,30 @@
           </div>
         </div>
 
-        <div class="col-lg-6 align-items-center form-contact bg-black" data-aos="fade-up" data-aos-duration="700">
-          <div class="container p-4">
-            <form>
-              <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Nama</label>
-                <input type="text" autocomplete="off" class="form-control" id="exampleInputEmail1"
-                  aria-describedby="emailHelp" style="height: 45px;">
-              </div>
-              <div class="mb-2">
-                <label for="exampleFormControlTextarea1" class="form-label">Kirim Kritik Dan Saran</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  style="height: 100px;"></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary mt-4">Submit</button>
-              </div>
-            </form>
+        <div class="col-lg-6 form-contact bg-black" data-aos="fade-up" data-aos-duration="700">
+          <div class="container p-4 my-auto h-100">
+            <div class="row h-100 align-items-center">
+              <form>
+                <div class="mb-4 text-center">
+                  <label for="exampleInputEmail1" class="form-label">Nama</label>
+                  <input type="text" autocomplete="off" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" style="height: 50px;">
+                </div>
+                <div class="mb-2 text-center">
+                  <label for="exampleFormControlTextarea1" class="form-label">Kirim Kritik Dan Saran</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    style="height: 100px;"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg mt-4">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
-        </div>
+        </div>`
       </div>
 
-      <div class="row justify-content-around mt-4 gy-3">
+      <div class="row justify-content-around mt-4 gy-3 card-info">
         <div class="col-lg-6 text-center" data-aos="zoom-out" data-aos-duration="800">
           <div class="container py-3 bg-black">
             <i class="bi bi-pin-map-fill fs-3"></i>
@@ -917,6 +923,15 @@
       });
     });
 
+    // collapse when clicked 
+    document.querySelectorAll('.navbar .nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var navbarCollapse = document.getElementById('navbarSupportedContent');
+        var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+        bsCollapse.hide();
+      });
+    });
+
     // Tab navigation
     document.addEventListener('DOMContentLoaded', (event) => {
       document.querySelectorAll('.nav-tabs .nav-link').forEach(tab => {
@@ -936,21 +951,6 @@
 
         });
       });
-    });
-
-    // adjusting Container 
-    var containers = document.querySelectorAll(
-      '.navbar .container'
-    );
-
-    containers.forEach(function (container) {
-      if (window.innerWidth >= 2560) {
-        container.classList.add('container-fluid');
-        container.classList.remove('container');
-      } else {
-        container.classList.add('container');
-        container.classList.remove('container-fluid');
-      }
     });
 
   </script>

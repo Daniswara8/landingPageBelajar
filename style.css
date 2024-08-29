@@ -192,6 +192,16 @@ body {
   color: whitesmoke;
 }
 
+.contact form button {
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+}
+
+.contact label {
+  font-size: 20px;
+}
+
 .faq {
   margin-top: 200px;
 }
@@ -288,6 +298,11 @@ body {
 
 /* 4k */
 @media (min-width: 2560px) {
+  .navbar .container {
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+
   .navbar-nav .nav-link {
     font-size: 30px !important;
     margin: 50px;
@@ -332,6 +347,7 @@ body {
 
   .about p {
     font-size: 40px !important;
+    margin-top: 65px !important;
   }
 
   .promosi {
@@ -349,6 +365,24 @@ body {
 
   .menu {
     padding: 200px 0 !important;
+  }
+
+  .menu .card {
+    margin: 15px !important;
+  }
+
+  .menu h3,
+  .menu .merk-depan,
+  .menu .merk-belakang {
+    font-size: 70px !important;
+  }
+
+  .menu ul {
+    margin-top: 60px !important;
+  }
+
+  .menu .nav-link {
+    font-size: 40px !important;
   }
 
   .menu .container {
@@ -374,11 +408,57 @@ body {
   .card-img-top {
     height: 430px !important;
   }
+
+  .contact .container {
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+
+  .contact h3 {
+    font-size: 70px !important;
+  }
+
+  .contact .fs-4 {
+    font-size: 40px !important;
+  }
+
+  .contact .fs-5 {
+    font-size: 30px !important;
+  }
+
+  .contact .card-info .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .contact label {
+    font-size: 30px !important;
+  }
+
+  .contact #exampleInputEmail1 {
+    height: 100px !important;
+    font-size: 30px !important;
+  }
+
+  .contact #exampleFormControlTextarea1 {
+    height: 200px !important;
+    font-size: 30px !important;
+  }
+
+  .faq {
+    margin-top: 350px;
+  }
+
+  .faq img {
+    width: 700px !important;
+    height: 500px !important;
+  }
+
 }
 /* End 4k */
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
   .navbar .container {
     margin: 20px auto;
   }
