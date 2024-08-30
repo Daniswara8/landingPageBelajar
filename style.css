@@ -125,7 +125,7 @@ body {
   border: none;
 }
 
-.menu .nav-link:visited {
+.menu .nav-link.active {
   background-color: chocolate;
   color: whitesmoke;
   border: none;
@@ -333,7 +333,7 @@ body {
   .about h3 {
     font-size: 70px !important;
   }
-  
+
   .about img.aboutImg {
     height: 800px !important;
     width: 1000px !important;
@@ -397,7 +397,7 @@ body {
   .card-body {
     padding: 30px 0 !important;
   }
-  
+
   .menu .card-body .merk-depan,
   .menu .card-body .merk-belakang,
   .menu .card-body h1,
@@ -407,6 +407,10 @@ body {
 
   .card-img-top {
     height: 430px !important;
+  }
+
+  .contact {
+    padding: 150px 70px;
   }
 
   .contact .container {
@@ -449,12 +453,102 @@ body {
     margin-top: 350px;
   }
 
-  .faq img {
-    width: 700px !important;
-    height: 500px !important;
+  .faq .row {
+    margin-top: 80px !important;
   }
 
+  .faq img {
+    width: 700px !important;
+    height: 600px !important;
+  }
+
+  .faq .accordion-button {
+    height: 150px;
+    font-size: 35px;
+  }
+
+  .faq .accordion-body {
+    height: 140px;
+    font-size: 35px;
+  }
+
+  .testimoni {
+    padding: 350px 0 !important;
+  }
+
+  .testimoni hr {
+    margin-top: 30px !important;
+    height: 3px !important;
+    color: white !important;
+    background-color: white !important;
+    max-width: 100% !important;
+    width: 60% !important;
+  }
+
+  .testimoni .container {
+    max-width: 100% !important;
+    width: 90% !important;
+  }
+
+  .testimoni .fs-1 {
+    font-size: 60px !important;
+  }
+
+  .testimoni .carousel {
+    height: 1000px !important;
+  }
+
+  .testimoni .carousel img {
+    width: 400px !important;
+    height: 400px !important;
+  }
+
+  .testimoni .carousel-inner {
+    height: 100% !important;
+  }
+
+  .testimoni h5 {
+    font-size: 60px !important;
+  }
+
+  .testimoni p {
+    font-size: 30px !important;
+  }
+
+  .testimoni .carousel-control-prev-icon,
+  .testimoni .carousel-control-next-icon {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .testimoni .bi-star-fill,
+  .testimoni .bi-star-half {
+    font-size: 50px !important;
+  }
+
+  .footer {
+    padding: 60px 0 !important;
+  }
+
+  .footer h4 {
+    font-size: 60px !important;
+  }
+
+  .footer i {
+    font-size: 55px !important;
+  }
+
+  .footer .nomor {
+    font-size: 40px !important;
+  }
+
+  .footer .instagram,
+  .footer .email,
+  .footer .map {
+    font-size: 40px !important;
+  }
 }
+
 /* End 4k */
 
 /* Tablet */
@@ -485,10 +579,8 @@ body {
 }
 /* End Tablet */
 
-
 /* Handphone */
 @media (max-width: 425px) {
-
   .navbar .container {
     margin: 20px 0;
   }
