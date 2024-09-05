@@ -57,7 +57,7 @@ body {
 }
 
 .about {
-  padding: 60px 0;
+  padding: 100px 0;
   background-color: black;
 }
 
@@ -161,12 +161,6 @@ body {
 }
 
 .modal p {
-  text-align: justify;
-}
-
-.card-text {
-  font-size: 1rem;
-  color: #6c757d;
   text-align: justify;
 }
 
@@ -361,6 +355,7 @@ body {
 
   .promosi .row {
     justify-content: space-evenly !important;
+    margin-top: 80px !important;
   }
 
   .menu {
@@ -414,7 +409,7 @@ body {
   }
 
   .contact .container {
-    width: 90% !important;
+    width: 95% !important;
     max-width: 100% !important;
   }
 
@@ -428,6 +423,10 @@ body {
 
   .contact .fs-5 {
     font-size: 30px !important;
+  }
+
+  .card-info {
+    margin-top: 30px !important;
   }
 
   .contact .card-info .container {
