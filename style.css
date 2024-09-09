@@ -47,7 +47,7 @@ body {
 }
 
 .parallax {
-  background-image: url("Assets/bgBrownies.jpg");
+  background-image: url("Assets/Images/bgBrownies.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
