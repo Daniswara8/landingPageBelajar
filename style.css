@@ -631,3 +631,8 @@ body {
   }
 }
 /* End Handphone */
+
+/* Small Handphone */
+.contact {
+  padding: 100px 0 50px;
+}
