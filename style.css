@@ -58,7 +58,8 @@ body {
 
 .about {
   padding: 100px 0;
-  background-color: black;
+  background: linear-gradient(#371f0e, black, #2e1a0c);
+  /* background-color: black; */
 }
 
 .about h3 {
@@ -572,7 +573,7 @@ body {
 /* End 4k */
 
 /* Tablet */
-@media (max-width: 970px) {
+@media (max-width: 850px) {
   .navbar .container {
     margin: 20px auto;
   }
