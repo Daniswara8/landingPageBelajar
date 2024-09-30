@@ -11,6 +11,14 @@ body {
   color: whitesmoke;
 }
 
+.navbar {
+  transition: all 1s;
+}
+
+.navbar-scrolled {
+  background-color: #4e3c3b;
+}
+
 .navbar .merk {
   color: chocolate;
   font-family: "Playwrite HU";
@@ -58,8 +66,8 @@ body {
 
 .about {
   padding: 100px 0;
-  background: linear-gradient(#371f0e, black, #2e1a0c);
-  /* background-color: black; */
+  /* background: linear-gradient(#371f0e, black, #2e1a0c); */
+  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
 }
 
 .about h3 {
