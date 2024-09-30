@@ -17,6 +17,7 @@ body {
 
 .navbar-scrolled {
   background-color: #4e3c3b;
+  /* transition: background-color 1s ease; */
 }
 
 .navbar .merk {
@@ -66,7 +67,6 @@ body {
 
 .about {
   padding: 100px 0;
-  /* background: linear-gradient(#371f0e, black, #2e1a0c); */
   background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
 }
 
@@ -582,6 +582,10 @@ body {
 
 /* Tablet */
 @media (max-width: 850px) {
+  .navbar {
+    background-color: #4e3c3b;
+  }
+
   .navbar .container {
     margin: 20px auto;
   }
@@ -609,6 +613,10 @@ body {
 
 /* Handphone */
 @media (max-width: 425px) {
+  .navbar {
+    background-color: #4e3c3b;
+  }
+
   .navbar .container {
     margin: 20px 0;
   }
@@ -642,6 +650,12 @@ body {
 /* End Handphone */
 
 /* Small Handphone */
-.contact {
-  padding: 100px 0 50px;
+@media (max-width: 375px) {
+  .navbar {
+    background-color: #4e3c3b;
+  }
+
+  .contact {
+    padding: 100px 0 50px;
+  }
 }
