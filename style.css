@@ -17,7 +17,6 @@ body {
 
 .navbar-scrolled {
   background-color: #4e3c3b;
-  /* transition: background-color 1s ease; */
 }
 
 .navbar .merk {
@@ -80,6 +79,14 @@ body {
   color: whitesmoke;
 }
 
+.about button {
+  background-color: chocolate !important;
+  color: white !important;
+  font-size: 22px;
+  width: 175px;
+  height: 60px;
+}
+
 .promosi {
   margin-top: 180px;
 }
@@ -97,7 +104,8 @@ body {
 }
 
 .menu {
-  background-color: rgb(36, 19, 7);
+  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
+  /* background-color: rgb(36, 19, 7); */
   padding: 100px 0 15px;
 }
 
@@ -193,7 +201,13 @@ body {
   color: whitesmoke;
 }
 
+.contact .form-wrapper {
+  border-radius: 10px;
+}
+
 .contact form button {
+  background-color: rgb(109, 49, 6) !important;
+  color: whitesmoke !important;
   width: 150px;
   height: 60px;
   font-size: 25px;
@@ -639,6 +653,10 @@ body {
   .contact img {
     width: 300px;
     height: 300px;
+  }
+
+  .contact {
+    padding: 100px 25px 50px;
   }
 
   .parallax img {

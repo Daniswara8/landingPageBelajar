@@ -73,19 +73,29 @@
   <section class="container-fluid about" id="about">
     <h3 class="text-center fs-1" data-aos="fade-up" data-aos-duration="500">ABOUT US</h3>
     <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="700">
-      <div class="col-xl-6 my-auto text-center">
+      <div class="col-10 my-auto text-center">
         <img src="Assets/Images/about.jpg" alt="" height="400" width="600" class="object-fit-cover aboutImg">
-      </div>
-      <div class="col-10 col-xl-5 mt-5 mt-xl-0">
-        <p class="fs-5">Selamat datang di Resya Brownies, tempat di mana kelezatan dan kualitas menjadi
+        <p class="fs-5 mt-5">Selamat datang di Resya Brownies, tempat di mana kelezatan dan kualitas menjadi
           prioritas utama kami. Resya Brownies adalah UMKM yang berfokus pada pembuatan berbagai macam
-          makanan lezat yang siap memanjakan lidah Anda.</p>
-        <p class="fs-5 mt-5">Kami memulai perjalanan kami dengan brownies, kue cokelat yang memiliki tekstur
+          makanan lezat yang siap memanjakan lidah Anda. Kami adalah UMKM yang berfokus pada pembuatan berbagai macam
+          makanan lezat, baik manis maupun gurih, yang siap memanjakan lidah Anda. Dengan komitmen pada bahan-bahan
+          berkualitas dan resep turun-temurun, kami berupaya menghadirkan produk terbaik yang cocok untuk berbagai momen
+          spesial Anda.</p>
+        <p class="fs-5 mt-5 collapse" id="collapse">Kami memulai perjalanan kami dengan brownies, kue cokelat yang
+          memiliki tekstur
           unik dan rasa yang mendalam. Setiap gigitan brownies kami dibuat dengan bahan-bahan berkualitas
           tinggi dan cinta, menghasilkan sensasi yang tak terlupakan. Tidak hanya brownies, kami juga menyediakan
           nasi tumpeng untuk berbagai acara spesial Anda. Nasi tumpeng kami dibuat dengan resep tradisional yang
           diwariskan turun temurun, disajikan dengan lauk pauk yang beragam dan cita rasa autentik yang menggugah
           selera.</p>
+        <p class="fs-5 mt-5 collapse" id="collapse">Perjalanan kami dimulai dengan brownies, kue cokelat yang memiliki
+          tekstur unik, padat, namun lembut di dalam. Setiap gigitan brownies kami memberikan sensasi rasa cokelat yang
+          mendalam, berpadu sempurna dengan kelembutan teksturnya. Dibuat dari bahan-bahan pilihan dan melalui proses
+          yang penuh ketelitian, brownies kami menjadi salah satu pilihan favorit bagi para pelanggan yang menyukai cita
+          rasa manis dan memanjakan.</p>
+        <button type="button" class="btn border border-0 text-white mt-3" id="toggleButton" data-bs-toggle="collapse"
+          data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">Read
+          More</button>
       </div>
     </div>
 
@@ -98,7 +108,7 @@
       <div class="row justify-content-center justify-content-xl-center justify-content-lg-around mt-5"
         data-aos="fade-right" data-aos-duration="800">
         <div class="col-lg-4 text-center">
-          <img src="Assets/Images/pembuatan.jpg" alt="">
+          <img src="Assets/Images/pembuatan.jpg" class="object-fit-cover" alt="">
         </div>
         <div class="col-10 col-lg-5 my-lg-auto mt-4">
           <p class="fs-5">Produk yang dibuat Resya Brownies menggunakan bahan bahan yang premium sehingga memastikan
@@ -686,7 +696,7 @@
     <div class="container my-5">
       <div class="row justify-content-center gy-4">
 
-        <div class="col-lg-6 gmap" data-aos="fade-up" data-aos-duration="700">
+        <div class="col-lg-5 gmap" data-aos="fade-up" data-aos-duration="700">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.445766844912!2d110.41789667479486!3d-7.0742045693378115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70894bd693a6a9%3A0xfc456018f255bbc6!2sJl.%20Meranti%20Tim.%20Dalam%20III%20No.74%2C%20Padangsari%2C%20Kec.%20Banyumanik%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050263!5e0!3m2!1sid!2sid!4v1721704549126!5m2!1sid!2sid"
@@ -694,7 +704,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 form-contact bg-black" data-aos="fade-up" data-aos-duration="700">
+        <div class="col-lg-7 form-contact bg-black form-wrapper" data-aos="fade-up" data-aos-duration="700">
           <div class="container p-4 my-auto h-100">
             <div class="row h-100 align-items-center">
               <form>
@@ -709,7 +719,7 @@
                     style="height: 100px;"></textarea>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary btn-lg mt-4">Submit</button>
+                  <button type="button" class="btn btn-lg mt-4">Submit</button>
                 </div>
               </form>
             </div>
@@ -795,8 +805,6 @@
 
       </div>
     </div>
-
-
   </section>
   <!-- end Contact -->
 
@@ -995,6 +1003,18 @@
 
         });
       });
+    });
+
+    // interactive button for read more and read less
+    const collapseElement = document.getElementById("collapse");
+    const toggleButton = document.getElementById("toggleButton");
+
+    collapseElement.addEventListener("show.bs.collapse", () => {
+      toggleButton.textContent = "Read Less";
+    });
+
+    collapseElement.addEventListener("hide.bs.collapse", () => {
+      toggleButton.textContent = "Read More";
     });
 
   </script>
