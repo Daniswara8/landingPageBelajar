@@ -75,7 +75,8 @@
     <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-duration="700">
       <div class="col-10 my-auto text-center">
         <img src="Assets/Images/about.jpg" alt="" height="400" width="600" class="object-fit-cover aboutImg">
-        <p class="fs-5 mt-5">Selamat datang di Resya Brownies, tempat di mana kelezatan dan kualitas menjadi
+        <p class="fs-5 mt-5" data-aos="fade-right" data-aos-duration="1000">Selamat datang di Resya Brownies, tempat di
+          mana kelezatan dan kualitas menjadi
           prioritas utama kami. Resya Brownies adalah UMKM yang berfokus pada pembuatan berbagai macam
           makanan lezat yang siap memanjakan lidah Anda. Kami adalah UMKM yang berfokus pada pembuatan berbagai macam
           makanan lezat, baik manis maupun gurih, yang siap memanjakan lidah Anda. Dengan komitmen pada bahan-bahan
@@ -94,7 +95,8 @@
           yang penuh ketelitian, brownies kami menjadi salah satu pilihan favorit bagi para pelanggan yang menyukai cita
           rasa manis dan memanjakan.</p>
         <button type="button" class="btn border border-0 text-white mt-3" id="toggleButton" data-bs-toggle="collapse"
-          data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">Read
+          data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse" data-aos="fade-left"
+          data-aos-duration="500">Read
           More</button>
       </div>
     </div>
@@ -709,14 +711,25 @@
             <div class="row h-100 align-items-center">
               <form>
                 <div class="mb-4 text-center">
-                  <label for="exampleInputEmail1" class="form-label">Nama</label>
-                  <input type="text" autocomplete="off" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" style="height: 50px;">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
+                    <input type="email" autocomplete="off" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="Input Alamat Email Anda" style="height: 50px;">
+                  </div>
+                </div>
+                <div class="mb-4 text-center">
+                  <label for="exampleInputName" class="form-label">Nama</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" autocomplete="off" class="form-control" id="exampleInputName1"
+                      aria-describedby="nameHelp" placeholder="Input Nama Anda" style="height: 50px;">
+                  </div>
                 </div>
                 <div class="mb-2 text-center">
                   <label for="exampleFormControlTextarea1" class="form-label">Kirim Kritik Dan Saran</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    style="height: 100px;"></textarea>
+                    placeholder="Masukkan Kritik Dan Saran Anda" style="height: 100px;"></textarea>
                 </div>
                 <div class="text-center">
                   <button type="button" class="btn btn-lg mt-4">Submit</button>
@@ -725,6 +738,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="row justify-content-around mt-4 gy-4 card-info">
@@ -735,14 +749,14 @@
             <p class="fs-5">Jl. Meranti Timur Dalam No III No. 74 </p>
           </div>
         </div>
-        <div class="col-lg-6 col-xl-3 text-center" data-aos="zoom-out" data-aos-duration="800">
+        <div class="col-lg-6 col-xl-3 text-center" data-aos="zoom-out" data-aos-duration="1600">
           <div class="container py-3 bg-black">
             <i class="bi bi-telephone-fill fs-3"></i>
             <h4 class="fs-4">No Telepon : </h4>
             <p class="fs-5">085640673917</p>
           </div>
         </div>
-        <div class="col-xl-3 text-center" data-aos="zoom-out" data-aos-duration="800">
+        <div class="col-xl-3 text-center" data-aos="zoom-out" data-aos-duration="2400">
           <div class="container py-3 bg-black">
             <i class="bi bi-envelope-at-fill fs-3"></i>
             <h4 class="fs-4">Email :</h4>
@@ -754,13 +768,15 @@
 
     <div class="container faq" data-aos="fade-up" data-aos-duration="1300">
       <h3 class="fs-1 text-center">Pertanyaan Yang Sering Diajukan</h3>
+
       <div class="row justify-content-xl-around justify-content-evenly align-items-center mt-5 gy-4">
-        <div class="col-lg-5 text-center">
-          <img src="Assets/Images/faq.png" alt="" height="267" width="400" class="object-fit-cover "
+
+        <div class="col-lg-5 text-center" data-aos="fade-right" data-aos-duration="700">
+          <img src="Assets/Images/faq.png" alt="" height="267" width="400" class="object-fit-cover"
             style="border-radius: 10px;">
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="700">
           <div class="accordion accordion-flush bg-danger custom-accordion" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -941,7 +957,7 @@
   <!-- script -->
   <script>
     // Initialize AOS
-    AOS.init({ once: true });
+    AOS.init({ once: true })
 
     // scrollspy navbar
     const sections = document.querySelectorAll('section');
