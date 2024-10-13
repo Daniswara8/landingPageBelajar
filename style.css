@@ -278,36 +278,52 @@ body {
   background-color: #4e3c3b;
 }
 
+.footer .merk-depan {
+  font-family: "Playwrite HU";
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+.footer .merk-belakang {
+  color: chocolate;
+  font-family: "Playwrite HU";
+  font-size: 25px;
+}
+
 .footer a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
+.footer .footer-contact p {
+  margin-bottom: 5px !important;
+}
+
 .footer .bi-whatsapp {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .footer .bi-envelope {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .footer .bi-pin-map-fill {
-  font-size: 20px;
-}
-
-.footer .nomor {
-  color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footer .email {
   color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footer .map {
   color: whitesmoke;
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.quick-link a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 /* 4k */
