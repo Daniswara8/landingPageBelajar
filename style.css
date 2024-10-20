@@ -44,10 +44,20 @@ body {
   font-family: "Playwrite HU";
 }
 
-.navbar-toggler,
-.navbar-toggler-icon {
+.navbar .bi-list {
   color: white;
-  background-color: white;
+  font-size: 2rem;
+}
+
+.navbar .bi-x {
+  color: white;
+  font-size: 2.188rem;
+}
+
+.navbar-toggler {
+  color: white;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .jargon h3 {
@@ -87,6 +97,11 @@ body {
   height: 60px;
 }
 
+/* .about img {
+  height: 25rem;
+  width: 28.125rem;
+} */
+
 .promosi {
   margin-top: 180px;
 }
@@ -104,7 +119,7 @@ body {
 }
 
 .menu {
-  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
+  background: linear-gradient(45deg, #2e2e2e, #3e2723, #1c1c1c);
   padding: 100px 0 15px;
 }
 
@@ -195,7 +210,7 @@ body {
 }
 
 .contact {
-  background-color: rgb(30, 30, 30);
+  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
   padding: 100px 50px 50px;
   color: whitesmoke;
 }
@@ -224,8 +239,13 @@ body {
   color: whitesmoke;
 }
 
-.accordion-button {
+.faq .accordion-button {
   height: 80px;
+  background-color: black !important;
+}
+
+.faq .accordion-button::after {
+  background-color: #fff !important;
 }
 
 .testimoni {
@@ -601,28 +621,36 @@ body {
     padding: 60px 0 !important;
   }
 
-  .footer h4 {
-    font-size: 60px !important;
+  .footer .container {
+    width: 90% !important;
+    max-width: 100% !important;
   }
 
-  .footer i {
-    font-size: 55px !important;
+  .footer h4,
+  .footer .merk-belakang {
+    font-size: 3rem !important;
+    margin-bottom: 1.875rem !important;
   }
 
-  .footer .nomor {
-    font-size: 40px !important;
+  .footer .footer-about p {
+    font-size: 2rem !important;
+    margin: 1rem 0 !important;
   }
 
-  .footer .instagram,
-  .footer .email,
-  .footer .map {
-    font-size: 40px !important;
+  .footer .footer-contact p,
+  .footer .footer-contact i,
+  .footer .footer-contact a {
+    font-size: 2rem !important;
+  }
+
+  .footer ul li a {
+    font-size: 2rem !important;
   }
 }
 /* End 4k */
 
 /* Tablet */
-@media (max-width: 850px) {
+@media (min-width: 768px) and (max-width: 850px) {
   .navbar {
     background-color: #4e3c3b;
   }
@@ -649,13 +677,21 @@ body {
     width: 300px;
     object-fit: cover;
   }
+
+  .footer .footer-about p {
+    margin-bottom: 5px !important;
+  }
 }
 /* End Tablet */
 
 /* Handphone */
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .navbar {
     background-color: #4e3c3b;
+  }
+
+  .navbar .navbar-nav {
+    align-items: center;
   }
 
   .navbar .container {
@@ -691,16 +727,24 @@ body {
     width: 250px;
     object-fit: cover;
   }
+
+  .footer .footer-about p {
+    margin-bottom: 5px !important;
+  }
 }
 /* End Handphone */
 
 /* Small Handphone */
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .navbar {
     background-color: #4e3c3b;
   }
 
   .contact {
     padding: 100px 0 50px;
+  }
+
+  .footer .footer-about p {
+    margin-bottom: 5px !important;
   }
 }
