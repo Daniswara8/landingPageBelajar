@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+@import url("Assets/Library/bootstrap/icons/bootstrap-icons.min.css");
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -79,10 +80,6 @@ body {
   background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
 }
 
-.about h3 {
-  color: whitesmoke;
-}
-
 .about p {
   word-spacing: 10px;
   text-align: justify;
@@ -96,11 +93,6 @@ body {
   width: 175px;
   height: 60px;
 }
-
-/* .about img {
-  height: 25rem;
-  width: 28.125rem;
-} */
 
 .promosi {
   margin-top: 180px;
@@ -204,53 +196,9 @@ body {
   object-fit: cover;
 }
 
-.KritikSaran {
-  margin-top: 140px;
-  color: whitesmoke;
-}
-
-.contact {
-  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
-  padding: 100px 50px 50px;
-  color: whitesmoke;
-}
-
-.contact .form-wrapper {
-  border-radius: 10px;
-}
-
-.contact form button {
-  background-color: rgb(109, 49, 6) !important;
-  color: whitesmoke !important;
-  width: 150px;
-  height: 60px;
-  font-size: 25px;
-}
-
-.contact label {
-  font-size: 20px;
-}
-
-.faq {
-  margin-top: 200px;
-}
-
-.faq h3 {
-  color: whitesmoke;
-}
-
-.faq .accordion-button {
-  height: 80px;
-  background-color: black !important;
-}
-
-.faq .accordion-button::after {
-  background-color: #fff !important;
-}
-
 .testimoni {
-  background-color: black;
-  padding: 250px 0 300px;
+  background-color: #3e281d;
+  padding: 250px 0 200px;
 }
 
 .testimoni .carousel-control-prev-icon,
@@ -267,6 +215,67 @@ body {
 
 .testimoni h3 {
   color: whitesmoke;
+}
+
+.faq {
+  margin-top: 150px;
+}
+
+.faq hr {
+  background-color: whitesmoke;
+  height: 2px;
+}
+
+.faq p {
+  color: rgb(167, 165, 165);
+}
+
+.faq .accordion .accordion-button {
+  background-color: rgb(120, 52, 3);
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.faq .accordion .accordion-button:hover {
+  background-color: rgb(165, 73, 8);
+}
+
+.faq .accordion .accordion-button:active {
+  background-color: rgb(165, 73, 8);
+}
+
+.faq .accordion .accordion-button::after {
+  background-image: none !important;
+  content: "\F282";
+  text-align: center;
+  font-family: "bootstrap-icons";
+  color: white;
+}
+
+.contact {
+  background-color: #663c27;
+  padding: 100px 50px 50px;
+  color: whitesmoke;
+}
+
+.card-contact {
+  background: linear-gradient(135deg, #523223, #42281c);
+}
+
+.contact a {
+  background-color: chocolate !important;
+  color: white !important;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 13rem;
+  height: auto;
+}
+
+.contact a:hover {
+  background-color: transparent !important;
+  border: 1.5px solid chocolate !important;
+  transition: all 0.3s;
 }
 
 .embed-responsive {
@@ -292,6 +301,28 @@ body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.contact .location {
+  margin-top: 4rem;
+}
+
+.contact .merk-depan {
+  font-family: "Playwrite HU";
+  color: whitesmoke;
+}
+
+.contact .merk-belakang {
+  color: chocolate;
+  font-family: "Playwrite HU";
+}
+
+.contact .info-contact h5 {
+  margin-bottom: 0;
+}
+
+.contact .location .d-flex {
+  margin-top: 1.875rem;
 }
 
 .footer {
@@ -650,7 +681,7 @@ body {
 /* End 4k */
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 850px) {
+@media (max-width: 850px) {
   .navbar {
     background-color: #4e3c3b;
   }
@@ -667,15 +698,15 @@ body {
     margin: 3px 0;
   }
 
-  .about img {
-    height: 267px;
-    width: 400px;
-  }
-
   .parallax img {
     height: 300px;
     width: 300px;
     object-fit: cover;
+  }
+
+  .about img {
+    height: 267px;
+    width: 400px;
   }
 
   .footer .footer-about p {
@@ -707,10 +738,15 @@ body {
     font-size: 14px;
   }
 
+  .parallax img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+
   .about img {
     width: 300px;
     height: 300px;
-    text-align: center;
   }
 
   .contact img {
@@ -722,10 +758,8 @@ body {
     padding: 100px 25px 50px;
   }
 
-  .parallax img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
+  .contact .card-contact p {
+    text-align: justify;
   }
 
   .footer .footer-about p {
@@ -742,6 +776,10 @@ body {
 
   .contact {
     padding: 100px 0 50px;
+  }
+
+  .contact .card-contact p {
+    text-align: justify;
   }
 
   .footer .footer-about p {
