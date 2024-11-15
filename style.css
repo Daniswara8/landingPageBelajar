@@ -52,7 +52,7 @@ body {
 
 .navbar .bi-x {
   color: white;
-  font-size: 2.188rem;
+  font-size: 2rem;
 }
 
 .navbar-toggler {
@@ -76,8 +76,11 @@ body {
 }
 
 .about {
-  padding: 100px 0;
-  background: linear-gradient(135deg, #2e2e2e, #3e2723, #1c1c1c);
+  padding: 150px 0 0;
+  background: linear-gradient(45deg, #2e2e2e, #3e2723, #1c1c1c);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about p {
@@ -111,8 +114,9 @@ body {
 }
 
 .menu {
-  background: linear-gradient(45deg, #2e2e2e, #3e2723, #1c1c1c);
-  padding: 100px 0 15px;
+  /* background: linear-gradient(45deg, #2e2e2e, #3e2723, #1c1c1c); */
+  background-color: #251409;
+  padding: 100px 0 50px;
 }
 
 .menu .merk-depan {
@@ -198,15 +202,14 @@ body {
 
 .testimoni {
   background-color: #3e281d;
-  padding: 250px 0 200px;
+  padding: 200px 0 200px;
 }
 
-.testimoni .carousel-control-prev-icon,
-.testimoni .carousel-control-next-icon {
-  background-color: blue !important;
-  color: white !important;
-  width: 50px;
-  height: 50px;
+.testimoni .carousel-control-prev i,
+.testimoni .carousel-control-next i {
+  font-size: 1.563rem;
+  font-weight: bold;
+  color: white;
 }
 
 .testimoni p {
@@ -377,309 +380,6 @@ body {
   color: whitesmoke;
 }
 
-/* 4k */
-@media (min-width: 2560px) {
-  .navbar .container {
-    width: 90% !important;
-    max-width: 100% !important;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 30px !important;
-    margin: 50px;
-  }
-
-  .navbar .merk {
-    font-size: 50px !important;
-  }
-  .navbar a.navbar-brand {
-    font-size: 50px !important;
-  }
-
-  .parallax img {
-    height: 700px !important;
-    width: 700px !important;
-  }
-
-  .jargon h3,
-  .jargon .btn {
-    font-size: 60px !important;
-    margin-top: 60px;
-  }
-
-  .about {
-    padding: 120px 0;
-  }
-
-  .about h3 {
-    font-size: 70px !important;
-  }
-
-  .about img.aboutImg {
-    height: 800px !important;
-    width: 1000px !important;
-    margin: 80px 0 !important;
-  }
-
-  .about img {
-    height: 400px !important;
-    width: 700px !important;
-  }
-
-  .about p {
-    font-size: 40px !important;
-    margin-top: 65px !important;
-  }
-
-  .about button {
-    font-size: 30px !important;
-    width: 200px !important;
-    height: 80px !important;
-    margin-top: 25px !important;
-  }
-
-  .promosi {
-    margin-top: 290px !important;
-  }
-
-  .promosi .merk-depan,
-  .promosi .merk-belakang {
-    font-size: 55px;
-  }
-
-  .promosi .row {
-    justify-content: space-evenly !important;
-    margin-top: 80px !important;
-  }
-
-  .menu {
-    padding: 200px 0 !important;
-  }
-
-  .menu .card {
-    margin: 15px !important;
-  }
-
-  .menu h3,
-  .menu .merk-depan,
-  .menu .merk-belakang {
-    font-size: 70px !important;
-  }
-
-  .menu ul {
-    margin-top: 60px !important;
-  }
-
-  .menu .nav-link {
-    font-size: 40px !important;
-  }
-
-  .menu .container {
-    width: 80% !important;
-    max-width: 100% !important;
-  }
-
-  .menu .card {
-    height: 770px !important;
-  }
-
-  .card-body {
-    padding: 30px 0 !important;
-  }
-
-  .menu .card-body .merk-depan,
-  .menu .card-body .merk-belakang,
-  .menu .card-body h1,
-  .menu .card-body p {
-    font-size: 30px !important;
-  }
-
-  .card-img-top {
-    height: 430px !important;
-  }
-
-  .modal-dialog {
-    max-width: 50% !important;
-  }
-
-  .modal p {
-    margin: auto 0;
-    font-size: 35px !important;
-  }
-
-  .modal h1 {
-    font-size: 50px !important;
-  }
-
-  .modal .btn-close {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 35px !important;
-  }
-
-  .modal a.btn {
-    height: 65px !important;
-    font-size: 25px !important;
-  }
-
-  .contact {
-    padding: 150px 70px;
-  }
-
-  .contact .container {
-    width: 95% !important;
-    max-width: 100% !important;
-  }
-
-  .contact h3 {
-    font-size: 70px !important;
-  }
-
-  .contact .fs-4 {
-    font-size: 40px !important;
-  }
-
-  .contact .fs-5 {
-    font-size: 30px !important;
-  }
-
-  .card-info {
-    margin-top: 30px !important;
-  }
-
-  .contact .card-info .container {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
-  .contact label {
-    font-size: 30px !important;
-  }
-
-  .contact #exampleInputEmail1 {
-    height: 100px !important;
-    font-size: 30px !important;
-  }
-
-  .contact #exampleInputName1 {
-    height: 100px !important;
-    font-size: 30px !important;
-  }
-
-  .contact #exampleFormControlTextarea1 {
-    height: 200px !important;
-    font-size: 30px !important;
-  }
-
-  .faq {
-    margin-top: 350px;
-  }
-
-  .faq .row {
-    margin-top: 80px !important;
-  }
-
-  .faq img {
-    width: 700px !important;
-    height: 600px !important;
-  }
-
-  .faq .accordion-button {
-    height: 150px;
-    font-size: 35px;
-  }
-
-  .faq .accordion-body {
-    height: 140px;
-    font-size: 35px;
-  }
-
-  .testimoni {
-    padding: 350px 0 !important;
-  }
-
-  .testimoni hr {
-    margin-top: 30px !important;
-    height: 3px !important;
-    color: white !important;
-    background-color: white !important;
-    max-width: 100% !important;
-    width: 60% !important;
-  }
-
-  .testimoni .container {
-    max-width: 100% !important;
-    width: 90% !important;
-  }
-
-  .testimoni .fs-1 {
-    font-size: 60px !important;
-  }
-
-  .testimoni .carousel {
-    height: 1000px !important;
-  }
-
-  .testimoni .carousel img {
-    width: 400px !important;
-    height: 400px !important;
-  }
-
-  .testimoni .carousel-inner {
-    height: 100% !important;
-  }
-
-  .testimoni h5 {
-    font-size: 60px !important;
-  }
-
-  .testimoni p {
-    font-size: 30px !important;
-  }
-
-  .testimoni .carousel-control-prev-icon,
-  .testimoni .carousel-control-next-icon {
-    width: 100px !important;
-    height: 100px !important;
-  }
-
-  .testimoni .bi-star-fill,
-  .testimoni .bi-star-half {
-    font-size: 50px !important;
-  }
-
-  .footer {
-    padding: 60px 0 !important;
-  }
-
-  .footer .container {
-    width: 90% !important;
-    max-width: 100% !important;
-  }
-
-  .footer h4,
-  .footer .merk-belakang {
-    font-size: 3rem !important;
-    margin-bottom: 1.875rem !important;
-  }
-
-  .footer .footer-about p {
-    font-size: 2rem !important;
-    margin: 1rem 0 !important;
-  }
-
-  .footer .footer-contact p,
-  .footer .footer-contact i,
-  .footer .footer-contact a {
-    font-size: 2rem !important;
-  }
-
-  .footer ul li a {
-    font-size: 2rem !important;
-  }
-}
-/* End 4k */
-
 /* Tablet */
 @media (max-width: 850px) {
   .navbar {
@@ -707,6 +407,10 @@ body {
   .about img {
     height: 267px;
     width: 400px;
+  }
+
+  .menu {
+    padding: 50px 0;
   }
 
   .footer .footer-about p {
@@ -749,13 +453,13 @@ body {
     height: 300px;
   }
 
+  .contact {
+    padding: 100px 25px 50px;
+  }
+
   .contact img {
     width: 300px;
     height: 300px;
-  }
-
-  .contact {
-    padding: 100px 25px 50px;
   }
 
   .contact .card-contact p {
