@@ -114,7 +114,6 @@ body {
 }
 
 .menu {
-  /* background: linear-gradient(45deg, #2e2e2e, #3e2723, #1c1c1c); */
   background-color: #251409;
   padding: 100px 0 50px;
 }
@@ -254,6 +253,7 @@ body {
   text-align: center;
   font-family: "bootstrap-icons";
   color: white;
+  text-align: center;
 }
 
 .contact {
@@ -465,10 +465,6 @@ body {
   .contact .card-contact p {
     text-align: justify;
   }
-
-  .footer .footer-about p {
-    margin-bottom: 5px !important;
-  }
 }
 /* End Handphone */
 
@@ -484,9 +480,5 @@ body {
 
   .contact .card-contact p {
     text-align: justify;
-  }
-
-  .footer .footer-about p {
-    margin-bottom: 5px !important;
   }
 }
